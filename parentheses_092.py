@@ -19,7 +19,7 @@ def matcher(line):
    s = Stack()
    for k in line:
       if k in d.values():
-         s.push(c)
+         s.push(k)
       if k in d.keys():
          try:
             if d[k] != s.pop():
