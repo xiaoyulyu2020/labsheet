@@ -7,8 +7,8 @@ class Graph(object):
     for c in range(num):
       self.adj[c] = list()
   def addEdge(self, start, end):
-    self.adj[start] = end
-    self.adj[end] = start
+    self.adj[start].append(end)
+    self.adj[end].append(start)
 
 class DFSPaths(object):
   def __init__(self, gra, start):
