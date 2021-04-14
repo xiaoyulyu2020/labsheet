@@ -20,7 +20,7 @@ class DFSPaths(object):
 
   def dfs(self, visit):
     self.visited[visit] = True
-    for w in self.g.adj[visit]:
+    for w in self.gra.adj[visit]:
       if not self.visited[w]:
         self.parent[w] = visit
         self.dfs(w)
